@@ -38,40 +38,6 @@
             font-size: 2.5rem;
             text-shadow: 2px 2px 5px rgba(255, 255, 0, 0.7);
         }
-<!-- Vídeo Clipe -->
-<div class="video-container">
-    <p>🎬 Assista ao Videoclipe Oficial</p>
-    <video class="video-player" controls>
-        <source src="https://archive.org/download/no-one-knows_202502/NO%20ONE%20KNOWS.mp4" type="video/mp4">
-        Seu navegador não suporta a reprodução de vídeos.
-    </video>
-</div>
-/* Estilo do Contêiner do Vídeo */
-.video-container {
-    background: rgba(0, 0, 0, 0.9);
-    padding: 20px;
-    border-radius: 15px;
-    margin: 20px auto;
-    max-width: 600px;
-    box-shadow: 0 5px 15px rgba(255, 255, 0, 0.5);
-    text-align: center;
-}
-
-.video-container p {
-    font-size: 1.3rem;
-    font-weight: bold;
-    color: #ffcc00;
-    margin-bottom: 10px;
-    text-shadow: 1px 1px 5px rgba(255, 255, 0, 0.7);
-}
-
-/* Player de Vídeo Responsivo */
-.video-player {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.3);
-}
 
         /* Links */
         a {
@@ -86,7 +52,34 @@
             text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.9);
         }
 
-        /* Player */
+        /* Estilo do Contêiner do Vídeo */
+        .video-container {
+            background: rgba(0, 0, 0, 0.9);
+            padding: 20px;
+            border-radius: 15px;
+            margin: 20px auto;
+            max-width: 600px;
+            box-shadow: 0 5px 15px rgba(255, 255, 0, 0.5);
+            text-align: center;
+        }
+
+        .video-container p {
+            font-size: 1.3rem;
+            font-weight: bold;
+            color: #ffcc00;
+            margin-bottom: 10px;
+            text-shadow: 1px 1px 5px rgba(255, 255, 0, 0.7);
+        }
+
+        /* Player de Vídeo Responsivo */
+        .video-player {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(255, 255, 255, 0.3);
+        }
+
+        /* Player de Música */
         .player-container {
             background: rgba(0, 0, 0, 0.9);
             padding: 20px;
@@ -144,6 +137,15 @@
         <h1>Afterwork</h1>
         <p><a href="index.html">← Voltar para Orgone Records</a></p>
 
+        <!-- Vídeo Clipe -->
+        <div class="video-container">
+            <p>🎬 Assista ao Videoclipe Oficial</p>
+            <video class="video-player" controls>
+                <source src="https://archive.org/download/no-one-knows_202502/NO%20ONE%20KNOWS.mp4" type="video/mp4">
+                Seu navegador não suporta a reprodução de vídeos.
+            </video>
+        </div>
+
         <!-- Player 1 -->
         <div class="player-container">
             <p>🎵 You Oughta Know</p>
@@ -178,4 +180,5 @@
 
 </body>
 </html>
+
 
