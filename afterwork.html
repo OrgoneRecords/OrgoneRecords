@@ -122,12 +122,21 @@
         </div>
     </div>
 
-    <script>
-        const players = document.querySelectorAll('.player');
-        players.forEach(player => {
-            new Plyr(player);
+ <script>
+    const players = document.querySelectorAll('.player');
+
+    players.forEach(player => {
+        new Plyr(player); // Inicia o player estilizado
+        player.addEventListener('play', function () {
+            players.forEach(otherPlayer => {
+                if (otherPlayer !== player) {
+                    otherPlayer.pause(); // Pausa qualquer outro player que esteja tocando
+                }
+            });
         });
-    </script>
+    });
+</script>
+
 
 </body>
 </html>
