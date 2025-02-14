@@ -17,50 +17,75 @@
 
         /* Container principal */
         .container {
-            max-width: 600px;
+            max-width: 90%;
             margin: auto;
             padding: 20px;
         }
 
         /* Logotipo */
         .logo {
-            width: 200px; /* Ajuste o tamanho conforme necessário */
+            width: 180px; /* Ajustado para melhor visualização */
             height: auto;
             display: block;
-            margin: 30px auto 10px auto; /* Centraliza e ajusta espaçamento */
-            filter: drop-shadow(3px 3px 10px rgba(255, 255, 255, 0.5)); /* Efeito de sombra */
+            margin: 30px auto 10px auto;
+            filter: drop-shadow(3px 3px 10px rgba(255, 255, 255, 0.5));
         }
 
         /* Título */
         h1 {
-            font-size: 2.5rem;
+            font-size: 2rem; /* Reduzido para melhor leitura no celular */
             text-shadow: 2px 2px 5px rgba(255, 255, 0, 0.7);
+            margin-bottom: 10px;
         }
 
-        /* Links das Bandas */
-        .band {
-            margin: 20px;
-            padding: 20px;
-            border: 1px solid #fff;
-            display: inline-block;
-            background: rgba(255, 255, 0, 0.1);
-            border-radius: 10px;
-            transition: 0.3s;
+        p {
+            font-size: 1rem; /* Ajustado para telas menores */
+            margin-bottom: 20px;
         }
 
-        .band:hover {
-            background: rgba(255, 255, 0, 0.3);
-            transform: scale(1.05);
+        /* Botões das bandas */
+        .band-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
         }
 
-        a {
-            color: #ffcc00;
+        .band-button {
+            width: 90%;
+            max-width: 300px;
+            padding: 15px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            text-align: center;
+            background: linear-gradient(145deg, #ffcc00, #b38f00);
+            color: #111;
             text-decoration: none;
-            font-size: 20px;
+            border-radius: 10px;
+            box-shadow: 3px 3px 10px rgba(255, 255, 0, 0.5);
+            transition: transform 0.2s, box-shadow 0.2s;
+            display: block;
         }
 
-        a:hover {
-            text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.7);
+        .band-button:hover {
+            transform: scale(1.05);
+            box-shadow: 5px 5px 15px rgba(255, 255, 0, 0.7);
+        }
+
+        /* Responsividade */
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 1.8rem;
+            }
+
+            p {
+                font-size: 0.9rem;
+            }
+
+            .band-button {
+                font-size: 1rem;
+                padding: 12px;
+            }
         }
     </style>
 </head>
@@ -69,17 +94,13 @@
     <!-- Logotipo -->
     <img src="https://archive.org/download/logotipo_20250214/file-SsixWVLw4i3XHuB4TaWw5j.jpg" alt="Orgone Records Logo" class="logo">
 
-    <h1>
+    <h1>🎸 Orgone Records</h1>
     <p>Bem-vindo à Orgone Records! Conheça nossas bandas:</p>
 
-    <div class="container">
-        <div class="band">
-            <h2><a href="afterwork.html">Afterwork</a></h2>
-        </div>
-        
-        <div class="band">
-            <h2><a href="projeto-tranqueira.html">Projeto Tranqueira</a></h2>
-        </div>
+    <!-- Botões das Bandas -->
+    <div class="band-container">
+        <a href="afterwork.html" class="band-button">🎵 Afterwork</a>
+        <a href="projeto-tranqueira.html" class="band-button">🎶 Projeto Tranqueira</a>
     </div>
 
 </body>
