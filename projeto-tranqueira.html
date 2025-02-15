@@ -70,6 +70,25 @@
             box-shadow: 0 4px 10px rgba(255, 255, 255, 0.3);
         }
 
+        /* Player do Spotify */
+        .spotify-container {
+            background: rgba(0, 0, 0, 0.9);
+            padding: 20px;
+            border-radius: 15px;
+            margin: 20px auto;
+            max-width: 600px;
+            box-shadow: 0 5px 15px rgba(255, 255, 0, 0.5);
+            text-align: center;
+        }
+
+        .spotify-container p {
+            font-size: 1.3rem;
+            font-weight: bold;
+            color: #ffcc00;
+            margin-bottom: 10px;
+            text-shadow: 1px 1px 5px rgba(255, 255, 0, 0.7);
+        }
+
         /* Responsividade para Telas Pequenas */
         @media (max-width: 600px) {
             .video-player {
@@ -94,13 +113,17 @@
 
     <p><a href="index.html">← Voltar para Orgone Records</a></p>
 
-    <!-- Música -->
+    <!-- Música via Spotify -->
     <div class="container">
         <img src="https://archive.org/download/capa-tranqueira.jpg" alt="Capa do Álbum" class="cover">
-        <p>🎵 Música 1 - Nome da Música</p>
-        <audio controls>
-            <source src="https://archive.org/download/NOME-DA-MUSICA1.mp3" type="audio/mp3">
-        </audio>
+    </div>
+
+    <div class="spotify-container">
+        <p>🎵 Ouça no Spotify:</p>
+        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/1JTSNlTA30se6BQ7OKrIDS?utm_source=generator&theme=0" 
+            width="100%" height="152" frameBorder="0" allowfullscreen 
+            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy">
+        </iframe>
     </div>
 
 </body>
