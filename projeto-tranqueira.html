@@ -22,6 +22,15 @@
             padding: 20px;
         }
 
+        /* Logotipo */
+        .logo {
+            width: 180px;
+            height: auto;
+            display: block;
+            margin: 20px auto;
+            filter: drop-shadow(3px 3px 10px rgba(255, 255, 0, 0.5)); 
+        }
+
         /* Capa do Álbum */
         .cover {
             width: 100%;
@@ -71,15 +80,40 @@
             box-shadow: 0 4px 10px rgba(255, 255, 255, 0.3);
         }
 
+        /* Player do Spotify - Melhorado */
+        .spotify-container {
+            background: rgba(0, 0, 0, 0.9);
+            padding: 20px;
+            border-radius: 15px;
+            margin: 20px auto;
+            max-width: 600px;
+            box-shadow: 0 5px 15px rgba(255, 255, 0, 0.5);
+            text-align: center;
+        }
+
+        .spotify-container p {
+            font-size: 1.3rem;
+            font-weight: bold;
+            color: #ffcc00;
+            margin-bottom: 10px;
+            text-shadow: 1px 1px 5px rgba(255, 255, 0, 0.7);
+        }
+
         /* Ajuste do tamanho do Player no celular */
         @media (max-width: 600px) {
             .video-player {
                 height: 200px;
             }
+            .spotify-container iframe {
+                height: 400px;
+            }
         }
     </style>
 </head>
 <body>
+
+    <!-- Logotipo do Projeto Tranqueira -->
+    <img src="https://archive.org/download/Tranqueira/Tranqueira.jpeg" alt="Projeto Tranqueira Logo" class="logo">
 
     <h1>🎸 Projeto Tranqueira</h1>
 
@@ -105,9 +139,14 @@
 
     <p><a href="index.html">← Voltar para Orgone Records</a></p>
 
-    <!-- Capa da Banda -->
-    <div class="container">
-        <img src="https://archive.org/download/Tranqueira/Tranqueira.jpeg" alt="Capa da Banda Tranqueira" class="cover">
+    <!-- Player Melhorado do Spotify (Playlist Completa) -->
+    <div class="spotify-container">
+        <p>🎵 Ouça a Playlist Completa no Spotify:</p>
+        <iframe style="border-radius:12px" 
+            src="https://open.spotify.com/embed/playlist/INSIRA_O_LINK_AQUI?utm_source=generator&theme=0" 
+            width="100%" height="400" frameBorder="0" allowfullscreen 
+            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy">
+        </iframe>
     </div>
 
 </body>
